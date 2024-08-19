@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    font-family: 'Cinzel', serif;
+    color: #f5e6d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5e6d3;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 500px;
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.inventario {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    background-color: #f5e6d3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.informacion h3 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #3c3c3c ;
+}
+
+.informacion p {
+    margin: 0;
+    font-weight: bold;
+    color: #3c3c3c ;
+}
+
+.informacion img {
+    width: 30px;
+    margin: 10px;
+}
+
+.interactivo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5e6d3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.interactivo:hover {
+    background-color: #bdb4a6;
+}
+
+.interactivo h3 {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #3c3c3c ;
+}
+
+.interactivo img {
+    width: 30px;
+    margin: 10px;
+}
+
+.contenido-desplegable {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #3c3c3c;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    transition: max-height 0.3s ease-out;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 10px; /* Espacio entre ítems */
+}
+
+.contenido-desplegable p {
+    margin: 10px 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5e6d3;
+    color: #3c3c3c;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #bdb4a6;
+    width: 90px; /* Ajuste para el tamaño del cuadrado en móvil */
+    height: 90px; /* Asegura que sea un cuadrado perfecto */
+    text-align: center;
+}
+
+.item p {
+    margin: 0;
+    font-size: 0.85rem; /* Tamaño reducido para adaptarse a móviles */
+    font-weight: bold;
+}
+
+.item .icono {
+    width: 40px; /* Tamaño ajustado para el ícono del item */
+    margin-top: 5px;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+}
+
+.precio p {
+    margin-top: -19px;
+    font-size: 0.85rem; /* Tamaño reducido para adaptarse a móviles */
+    font-weight: bold;
+}
+
+.precio .coin {
+    width: 15px;
+    margin-left: 3px;
+}
+/* Estilos del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #3c3c3c;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    color: #f5e6d3;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f5e6d3;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+.modal-content img{
+    width: 30%;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #f5e6d3;
+    color: #3c3c3c;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #bdb4a6;
+}
+
